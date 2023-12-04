@@ -35,6 +35,7 @@ services:
     volumes: 
       - mongo-db-data:/data/db
       - ./mongo-schema/:/docker-entrypoint-initdb.d/
+      - ./test/:/test
 
 volumes:
   postgres-db-data:
